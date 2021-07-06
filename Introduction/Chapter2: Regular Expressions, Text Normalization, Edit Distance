@@ -1,0 +1,26 @@
+  User: I am unhappy.
+  ELIZA: DO YOU THINK COMING HERE WILL HELP YOU NOT TO BE UNHAPPY
+  User: I need some help, that much seems certain.
+  ELIZA: WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP
+  User: Perhaps I could learn to get along with my mother.
+  ELIZA: TELL ME MORE ABOUT YOUR FAMILY
+  User: My mother takes care of me.
+  ELIZA: WHO ELSE IN YOU FAMILY TAKES CARE OF YOU
+  User: My father.
+  ELIZA: YOUR FATHER
+  User: You are like my father in some ways.
+
+上述对话来自于 ELIZA ，一个早期的自然语言处理系统，它可以通过模仿罗杰斯学派的心理治疗师的反应来与用户进行有限的对话。 ELIZA 是一个令人惊讶的简单程序，
+它使用模式匹配来识别短语，例如："I need X"短语，并将其翻译成合适的语句，例如"What would it mean to you if you got X?"。这个简单的机器在这一领域取
+得了巨大的成功，因为 ELIZA 在模仿罗杰斯学派的心理治疗师时不需要真正的 领会 任何事情。正如 Weizenbaum 指出的，它是少数几种可以表现得自身对真实世界一
+无所知的对话系统之一。 ELIZA 人类对话非常成功：很多与其交互的人们开始相信 ELIZA 真正的 理解 他们和他们的问题，甚至在程序的工作原理被解释给他们之后，
+很多人们依旧相信 ELIZA 的理解能力。即使在今天这样的聊天机器人也是种有趣的娱乐方式。
+
+当然，现代对话系统不仅是一种娱乐手段：他们可以回答问题，预定航班或者寻找餐厅。他们的这些功能依赖于自身对于用户意图更复杂的理解，我们将在 Chapter26中做
+更多解释。尽管如此， ELIZA 和其他聊天机器人依赖的简单的基于模式(识别)的方法在自然语言处理中仍起着至关重要的作用。
+
+我们将从描述文本模式的最重要工具开始：正则表达式[regular expression]。自上述的 ELIZA 中"I need X"转换而来，正则表达式可以用作从文档中提取指定的字符串，
+以定义字符串（如 $199 或 $24.99）从文档中提取价格表。
+
+然后，我们将集体讨论一组称为文本规范化[text normalization]的任务，正则表达式在其中扮演了重要的作用。
+
